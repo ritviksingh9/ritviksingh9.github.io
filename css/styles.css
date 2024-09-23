@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif; /* Applying the serif font */
+    background-color: #f7f7f7; /* Light grey background */
+    color: #333; /* Dark grey text */
+    line-height: 1.8; /* Slightly increased line height for better readability */
+    font-size: 1rem;
+}
+
+/* Container Layout */
+.container {
+    max-width: 900px; /* Reduced width for a more focused content area */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #f7f7f7; /* Same background as body */
+    color: #333; /* Dark grey for text */
+    padding: 50px 0; /* More padding for better balance */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #555; /* Slightly lighter for the subheading */
+}
+
+section {
+    border-top: 2px solid transparent; /* Transparent by default */
+    border-image: linear-gradient(to right, #f7f7f7, #333, #f7f7f7) 1; /* Gradient border */
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+section:first-of-type {
+    border-top-width: 0px; /* No top border for the first section */
+}
+
+
+/* About Me Section - Unified */
+.bio {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add some gap between image and text */
+}
+
+.bio img {
+    width: 200px; /* Increased size */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Keep the circular shape */
+    object-fit: cover; /* Ensure it doesn't get distorted */
+}
+
+.bio h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bio p {
+    color: #666; /* Softer grey for the body text */
+    font-size: 1.1rem;
+}
+
+/* Links */
+.links {
+    margin-top: 20px;
+}
+
+.icon-link {
+    margin-right: 20px; /* Add spacing between links */
+    text-decoration: none;
+    color: #555; /* Grey for links */
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.icon-link i {
+    margin-right: 5px;
+}
+
+.icon-link:hover {
+    color: #333; /* Darker on hover */
+}
+
+/* Publications Section - Unified */
+/* .publications {
+    margin: 60px 0; /* Spacing between sections */
+/* } */
+
+.publications {
+    margin: 60px auto; /* Center the section horizontally */
+    /* max-width: 750px;  Limit the width so it doesn't stretch fully across the screen */
+    /* padding: 20px;     Add padding for a more balanced look */
+    /* background-color: #fff; Optional: add a background to make it stand out */
+    /* border-radius: 8px; Optional: add rounded corners */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); Optional: add a subtle shadow */
+}
+
+.publications h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.publication {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+    gap: 20px; /* Spacing between image and text */
+}
+
+.publication img {
+    width: 320px;
+    height: 180px;
+    border-radius: 5px; /* A subtle border-radius for images */
+    object-fit: cover;
+}
+
+.publication h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.publication p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.publication a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+video {    
+    width: 320;
+    height: 240;
+    border-radius: 8px;
+    object-fit: contain; /* Ensures no part of the video is cut off */
+    background-color: #000; /* Optional: adds a black background in case of letterboxing */
+    transition: transform 0.3s ease;
+}
+
+.publication a:hover {
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f7f7f7; /* Same background as body */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

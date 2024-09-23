@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Website</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ritvik Singh</h1>
+        <p>Robotics | Simulation | Perception</p>
+    </header>
+
+    <section class="container bio">
+        <img src="images/profile_picture.jpg" alt="Your photo">
+        <div>
+            <h2>About Me</h2>
+            <p>I am a research engineer at NVIDIA currently working on robotics and simulation 
+                with <a href="https://ankurhanda.github.io/" target="_blank">Dr. Ankur Handa</a>,
+                <a href="https://www.nathanratliff.com/" target="_blank">Dr. Nathan Ratliff</a>, and
+                <a href="https://www.linkedin.com/in/karl-van-wyk-445387105/" target="_blank">Dr. Karl Van Wyk</a>
+            </p>
+            <br />
+            <p>
+                My interests lie at the intersection of perception and control in order to build intelligent robot systems that can interact with the physical world. 
+                Currently, my research focuses on leveraging learning-based methods to achieve human-like dexterous manipulation
+                in unstructured environments.
+            </p>
+            <br />
+            <p>
+                
+                Previously, I studied <a href="https://engsci.utoronto.ca/program/what-is-engsci/" target="_blank">Engineering Science</a>
+                at the University of Toronto where I collaborated with <a href="https://www.cs.toronto.edu/~florian/" target="_blank">Prof. Florian Shkurti</a>
+                and <a href="https://animesh.garg.tech/" target="_blank">Prof. Animesh Garg</a>. 
+            </p>
+            <div class="links">
+                <!-- Email -->
+                <a href="mailto:ritviksingh9@gmail.com" class="icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <!-- CV -->
+                <a href="your-cv.pdf" class="icon-link">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+                <!-- Google Scholar -->
+                <a href="https://scholar.google.ca/citations?user=fGRYfRQAAAAJ&hl=en" target="_blank" class="icon-link">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="https://x.com/ritvik_singh9" target="_blank" class="icon-link">
+                    <i class="fab fa-twitter"></i> 
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/ritvik-singh/" target="_blank" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <hr />
+    </section>
+
+    <section class="container publications">
+        <h2>Publications</h2>
+        <div class="publication">
+            <img src="images/synthetica.jpg" alt="Publication 1">
+            <div>
+                <h3><a href="https://sites.google.com/view/synthetica-vision" target="_blank">Synthetica: Large Scale Synthetic Data Generation for Robot Perception</a></h3>
+                <p>In Submission</p>
+            </div>
+        </div>
+        <div class="publication">
+            <video src="images/dextreme.mp4" muted autoplay loop width="320" height="180" 
+                preload="none" style="border-radius: 8px; object-fit: cover;">
+                <!-- If the video cannot be displayed, provide alternative text or media -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="publication-details">
+                <!-- Title and Link -->
+                <h3>
+                    <a href="https://dextreme.org/" target="_blank">
+                        DeXtreme: Transfer of Agile In-Hand Manipulation from Simulation to Reality
+                    </a>
+                </h3>
+                <!-- Author List -->
+                <p class="authors">
+                    Authors: 
+                    Ankur Handa<sup>*</sup>, 
+                    Arthur Allshire<sup>*</sup>, 
+                    Viktor Makoviychuk<sup>*</sup>, 
+                    Aleksei Petrenko<sup>*</sup>, 
+                    <strong>Ritvik Singh</strong><sup>*</sup>, 
+                    Jingzhou Liu<sup>*</sup>, 
+                    Denys Makoviichuk, 
+                    Karl Van Wyk, 
+                    Alexander Zhurkevich, 
+                    Balakumar Sundaralingam, 
+                    Yashraj Narang, 
+                    Jean-Francois Lafleche, 
+                    Dieter Fox, 
+                    Gavriel State
+                </p>
+                <!-- Conference Info -->
+                <p class="conference">ICRA 2023</p>
+                <!-- Abstract -->
+                <p class="abstract">
+                    This paper presents a novel approach for transferring agile in-hand manipulation from simulation to reality. We leverage deep reinforcement learning and advanced simulation techniques to train a dexterous hand in a virtual environment and successfully transfer the learned policy to a physical robot. The results demonstrate significant improvements in manipulation accuracy and robustness in real-world settings.
+                </p>
+            </div>
+        </div>
+        <div class="publication">
+            <video id="publication-video" src="images/orbit.mp4" muted preload="none" loop 
+                width="320" height="180" poster="images/orbit.jpg" 
+                onmouseover="this.play()" onmouseout="this.pause(); this.load();" 
+                style="border-radius: 8px; object-fit: contain; background-color: #000;"></video>
+            <div class="publication-details">
+                <!-- Title and Link -->
+                <h3>
+                    <a href="https://isaac-orbit.github.io/" target="_blank">
+                        Orbit: A Unified Simulation Framework for Interactive Robot Learning Environments
+                    </a>
+                </h3>
+                <!-- Author List -->
+                <p class="authors">
+                    Authors: 
+
+                    Mayank Mittal, Calvin Yu, Qinxi Yu, Jingzhou Liu, 
+                    Nikita Rudin, David Hoeller, Jia Lin Yuan, <strong>Ritvik Singh</strong>, 
+                    Yunrong Guo Hammad Mazhar, Ajay Mandlekar, Buck Babich, 
+                    Gavriel State, Marco Hutter, Animesh Garg
+                </p>
+                <!-- Conference Info -->
+                <p class="conference">IROS 2023 | RA-L</p>
+                <!-- Abstract -->
+                <p class="abstract">
+                    We present ORBIT, a unified and modular framework for robot learning powered by NVIDIA Isaac Sim. 
+                    It offers a modular design to easily and efficiently create robotic environments with photo-realistic 
+                    scenes and fast and accurate rigid and deformable body simulation. ORBIT allows training reinforcement 
+                    learning policies and collecting large demonstration datasets from hand-crafted or expert solutions in 
+                    a matter of minutes by leveraging GPU-based parallelization. With this framework, we aim to support 
+                    various research areas, including representation learning, reinforcement learning, imitation learning, 
+                    and task and motion planning. 
+                     </p>
+            </div>
+        </div>
+        <div class="publication">
+            <img src="images/fast_graspd.png" alt="Publication 1">
+            <div class="publication-details">
+                <!-- Title and Link -->
+                <h3>
+                    <a href="https://arxiv.org/abs/2306.08132" target="_blank">
+                        Fast-Grasp'D: Dexterous Multi-finger Grasp Generation Through Differentiable Simulation
+                    </a>
+                </h3>
+                <!-- Author List -->
+                <p class="authors">
+                    Authors: 
+                    Dylan Turpin, Tao Zhong, Shutong Zhang, Guanglei Zhu, Jingzhou Liu, 
+                    <strong>Ritvik Singh</strong>, Eric Heiden, Miles Macklin, 
+                    Stavros Tsogkas, Sven Dickinson, Animesh Garg
+                </p>
+                <!-- Conference Info -->
+                <p class="conference">IROS 2023 | RA-L</p>
+                <!-- Abstract -->
+                <p class="abstract">
+                    Multi-finger grasping relies on high quality training data, which is hard to obtain: 
+                    human data is hard to transfer and synthetic data relies on simplifying assumptions that reduce grasp quality. 
+                    By making grasp simulation differentiable, and contact dynamics amenable to gradient-based optimization, 
+                    we accelerate the search for high-quality grasps with fewer limiting assumptions.
+                    We present Grasp'D-1M: a large-scale dataset for multi-finger robotic grasping, 
+                    synthesized with Fast- Grasp'D, a novel differentiable grasping simulator.
+                </p>
+            </div>
+        </div>
+
+        <!-- Repeat for more publications -->
+    </section>
+
+</body>
+</html>
