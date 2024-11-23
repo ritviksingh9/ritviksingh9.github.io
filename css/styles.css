@@ -19,21 +19,21 @@ body {
 .container {
     max-width: 900px; /* Reduced width for a more focused content area */
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Header Styling */
 header {
     background-color: #f7f7f7; /* Same background as body */
     color: #333; /* Dark grey for text */
-    padding: 50px 0; /* More padding for better balance */
+    padding: 0px 0; /* More padding for better balance */
     text-align: center;
 }
 
 header h1 {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 header p {
@@ -45,7 +45,7 @@ section {
     border-top: 2px solid transparent; /* Transparent by default */
     border-image: linear-gradient(to right, #f7f7f7, #333, #f7f7f7) 1; /* Gradient border */
     padding-top: 1em;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
 }
 
 section:first-of-type {
@@ -70,7 +70,7 @@ section:first-of-type {
 .bio h2 {
     font-size: 2.2rem;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .bio p {
@@ -80,7 +80,7 @@ section:first-of-type {
 
 /* Links */
 .links {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .icon-link {
