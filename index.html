@@ -66,6 +66,31 @@
     <section class="container publications">
         <h2>Publications</h2>
         <div class="publication">
+            <!-- Add a playing video -->
+            <video src="images/e2e4robotics_vid.mp4" muted autoplay loop playsinline width="320" height="180" 
+                preload="none" style="border-radius: 8px; object-fit: cover;">
+                Your browser does not support the video tag.
+            </video>
+            <div>
+                <h3><a href="https://e2e4robotics.com/" target="_blank">End-to-end RL Improves Dexterous Grasping Policies</a></h3>
+                <p class="authors">
+                    Authors: 
+                    <strong>Ritvik Singh</strong>, 
+                    Karl Van Wyk,
+                    Jitendra Malik,
+                    Pieter Abbeel,
+                    Nathan Ratliff,
+                    Ankur Handa
+                    
+                </p> 
+                <!-- Conference Info -->
+                <p class="conference">Preprint</p>
+                <p class="abstract">
+                    This work explores techniques to scale up image-based end-to-end learning for dexterous grasping with an arm + hand system. Unlike state-based RL, vision-based RL is much more memory inefficient, resulting in relatively low batch sizes, which is not amenable for algorithms like PPO. Nevertheless, it is still an attractive method as unlike the more commonly used techniques which distill state-based policies into vision networks, end-to-end RL can allow for emergent active vision behaviors. We identify a key bottleneck in training these policies is the way most existing simulators scale to multiple GPUs using traditional data parallelism techniques. We propose a new method where we disaggregate the simulator and RL (both training and experience buffers) onto separate GPUs. When deploying in the real world, we improve upon the previous state-of-the-art vision-based results using our end-to-end policies. To our knowledge, this is the first work that has demonstrated end-to-end RL for dexterous grasping with multifingered hands.
+                </p> 
+            </div>
+        </div>
+        <div class="publication">
             <!-- <img src="images/synthetica.jpg" alt="Publication 1"> -->
             <!-- Add a playing video -->
             <video src="images/grasp_anything_compress.mp4" muted autoplay loop playsinline width="320" height="180" 
@@ -105,7 +130,7 @@
                     Ankur Handa
                 </p> 
                 <!-- Conference Info -->
-                <p class="conference">Arxiv</p>
+                <p class="conference">IROS 2025</p>
                 <!-- Abstract -->
                 <p class="abstract">
                     We present Synthetica, a method for large-scale synthetic data generation for training robust state estimators. This paper focuses on the task of object detection, an important problem which can serve as the front-end for most state estimation problems, such as pose estimation. Leveraging data from a photorealistic ray-tracing renderer, we scale up data generation, generating 2.7 million images, to train highly accurate real-time detection transformers. We demonstrate state-of-the-art performance on the task of object detection while having detectors that run at 50--100Hz which is 9 times faster than the prior SOTA.
