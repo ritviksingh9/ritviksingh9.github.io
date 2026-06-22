@@ -12,7 +12,7 @@
 
     <header>
         <h1>Ritvik Singh</h1>
-        <p>Robotics | Simulation | Perception</p>
+        <p>Robot Learning</p>
     </header>
 
     <section class="container bio">
@@ -66,8 +66,44 @@
     <section class="container publications">
         <h2>Publications</h2>
         <div class="publication">
+            <video src="images/abc_teaser_compress.mp4" muted autoplay loop playsinline width="320" height="180"
+                preload="none" style="border-radius: 8px; object-fit: cover;">
+                Your browser does not support the video tag.
+            </video>
+            <div>
+                <h3><a href="https://abc.bot/" target="_blank">Scalable Behavior Cloning with Open Data, Training, and Evaluation</a></h3>
+                <p class="authors">
+                    Authors:
+                    Arthur Allshire<sup>*</sup>,
+                    Himanshu Gaurav Singh<sup>*</sup>,
+                    <strong>Ritvik Singh</strong><sup>*</sup>,
+                    Adam Rashid<sup>*</sup>,
+                    Hongsuk Choi<sup>*</sup>,
+                    David McAllister<sup>*</sup>,
+                    et al.
+                </p>
+                <p class="conference">Preprint</p>
+                <p class="abstract">
+                    We introduce ABC, a fully open-source stack for bimanual manipulation with behavior cloning. At its core is the release of ABC-130K, the largest bimanual teleoperation dataset to date, featuring 3,500 hours of data spanning over 130K episodes across nearly 200 diverse tasks. Furthermore, we open-source our accessible hardware setup, training infrastructure, and simulation pipeline. We also release 400 hours of sim-teleop data and provide a co-training recipe that produces correlated simulation and real-world evaluation. This allows researchers to effectively evaluate design choices without deploying on physical robots. We explore various training recipes and compare common architectural choices for Diffusion Transformers (DiT) and Vision-Language-Action (VLA) models, grounding our findings in real-world evaluations whose logs will also be released. The resulting policies successfully execute dexterous tasks such as box folding and extracting credit cards from wallets. By providing a reproducible toolbox, we aim to place researchers on an equal footing, establishing the necessary foundation to learn the ABCs of Behavior Cloning together as a community.
+                </p>
+            </div>
+        </div>
+        <div class="publication">
+            <img src="images/isaac_lab.jpg" alt="Isaac Lab">
+            <div>
+                <h3><a href="https://arxiv.org/abs/2511.04831" target="_blank">Isaac Lab: A GPU-Accelerated Simulation Framework for Multi-Modal Robot Learning</a></h3>
+                <p class="authors">
+                    Authors: NVIDIA
+                </p>
+                <p class="conference">Preprint</p>
+                <p class="abstract">
+                    We present Isaac Lab, the natural successor to Isaac Gym, which extends the paradigm of GPU-native robotics simulation into the era of large-scale multi-modal learning. Isaac Lab combines high-fidelity GPU parallel physics, photorealistic rendering, and a modular, composable architecture for designing environments and training robot policies. Beyond physics and rendering, the framework integrates actuator models, multi-frequency sensor simulation, data collection pipelines, and domain randomization tools, unifying best practices for reinforcement and imitation learning at scale within a single extensible platform. We highlight its application to a diverse set of challenges, including whole-body control, cross-embodiment mobility, contact-rich and dexterous manipulation, and the integration of human demonstrations for skill acquisition. Finally, we discuss upcoming integration with the differentiable, GPU-accelerated Newton physics engine, which promises new opportunities for scalable, data-efficient, and gradient-based approaches to robot learning. We believe Isaac Lab's combination of advanced simulation capabilities, rich sensing, and data-center scale execution will help unlock the next generation of breakthroughs in robotics research.
+                </p>
+            </div>
+        </div>
+        <div class="publication">
             <!-- Add a playing video -->
-            <video src="images/e2e4robotics_vid.mp4" muted autoplay loop playsinline width="320" height="180" 
+            <video src="images/e2e4robotics_vid.mp4" muted autoplay loop playsinline width="320" height="180"
                 preload="none" style="border-radius: 8px; object-fit: cover;">
                 Your browser does not support the video tag.
             </video>
@@ -108,7 +144,7 @@
                     Karl Van Wyk
                 </p> 
                 <!-- Conference Info -->
-                <p class="conference">Preprint</p>
+                <p class="conference">ICRA 2026</p>
                 <p class="abstract">
                     One of the most important yet challenging skills for robots is dexterous multi-fingered grasping of a diverse range of objects. Much of the prior work is limited by the speed, dexterity, or reliance on depth maps. In this paper, we introduce DextrAH-RGB, a system that can perform dexterous arm-hand grasping end2end from stereo RGB input. We train a teacher policy in simulation through reinforcement learning that acts on a geometric fabric action space to ensure reactivity and safety. We then distill this teacher into an RGB-based student in simulation. To our knowledge, this is the first work that is able to demonstrate robust sim2real transfer of an end2end RGB-based policy for a complex, dynamic, contact-rich tasks such as dexterous grasping. Our policies are also able to generalize to grasping novel objects with unseen geometry, texture, or lighting conditions during training.
                 </p> 
